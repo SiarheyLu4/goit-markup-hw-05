@@ -54,7 +54,7 @@
     <section class="block">
       <div class="container">
         <h1 class="block-title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="block-btn">Заказать услугу</button>
+        <button type="button" class="block-btn" data-modal-open>Заказать услугу</button>
       </div>
     </section>
     <!--organizational qualities-->
@@ -111,9 +111,18 @@
       <div class="container">
         <h2 class="doing-title">Чем мы занимаемся</h2>
         <ul class="list doing-list">
-          <li class="doing-item"><img src="images/box1.jpg" alt="разработка сайта" width="370" height="294"></li>
-          <li class="doing-item"><img src="images/box2.jpg" alt="разработка приложения" width="370" height="294"></li>
-          <li class="doing-item"><img src="images/box3.jpg" alt="разработка" width="370" height="294"></li>
+          <li class="doing-item">
+            <img src="images/box1.jpg" alt="разработка сайта" width="370" height="294">
+            <p class="doing-img-text">Десктопные приложения</p>
+          </li>
+          <li class="doing-item">
+            <img src="images/box2.jpg" alt="разработка приложения" width="370" height="294">
+            <p class="doing-img-text">Мобильные приложения</p>
+          </li>
+          <li class="doing-item">
+            <img src="images/box3.jpg" alt="разработка" width="370" height="294">
+            <p class="doing-img-text">Дизайнерские решения</p>
+          </li>
         </ul>
       </div>
     </section>
@@ -377,6 +386,14 @@
 
     </div>
   </footer>
+
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="modal-close" data-modal-close>&#x2716;</button>
+    </div>
+  </div>
+
+  <script src="./js/modal.js"></script>
 
 </body> 
 </html>
